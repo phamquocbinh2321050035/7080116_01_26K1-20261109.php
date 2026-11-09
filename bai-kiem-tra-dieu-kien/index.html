@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- Sinh viên làm đề bài sau, sử dụng HTML, CSS (Bootstrap), JS để hoàn thành.
+    Xây dựng form đăng ký, gồm các trường: Tên đăng nhập, Email, Mã sinh viên,
+    Họ và tên, Mật khẩu, Nhập lại mật khẩu.
+      Viết hàm kiểm tra bằng JavaScript sao cho form chỉ cho phép gửi đi khi:
+      -Toàn bộ các trường đều đã được nhập và
+      - Mật khẩu >6 ký tự và
+      - Ô mật khẩu và ô nhập lại mật khẩu phải trùng nhau -->
+  <form name="formRegister">
+    <h2>Đăng ký tài khoản</h2>
+    <div class="form-group">
+      <label for="userName">Tên đăng nhập:</label>
+      <input type="text" name="userName" id="userName" placeholder="VD: binh123" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="VD: binh@gmail.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="studentId">Mã sinh viên:</label>
+      <input type="text" name="studentId" id="studentId" placeholder="VD: 2321050035" required>
+    </div>
+
+    <div class="form-group">
+      <label for="fullName">Họ tên:</label>
+      <input type="text" name="fullName" id="fullName" placeholder="VD: Phạm Quốc Bình" required>
+    </div>
+
+    <div class="form-group">
+      <label for="passWord">Mật khẩu:</label>
+      <input type="password" name="passWord" id="passWord" required>
+    </div>
+
+    <div class="form-group">
+      <label for="confirm-password">Nhập lại mật khẩu:</label>
+      <input type="password" name="confirm-password" id="confirm-password" required>
+    </div>
+
+    <div class="form-group">
+      <input type="button" value="Đăng ký" onclick="register()">
+    </div>
+  </form>
+</body>
+
+</html>

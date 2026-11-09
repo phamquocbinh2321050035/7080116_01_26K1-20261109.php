@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 6px;
+    overflow: hidden; /* Chặn hoàn toàn thanh cuộn */
+    background-color: #fff5f7;
+    font-family: 'Inter', sans-serif;
+}
+
+.table-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Định dạng bảng full màn hình */
+table {
+    width: 100%;
+    height: 100%;
+    max-width: 1350px;
+    
+    /* BẮT BUỘC đổi thành separate để border-radius có tác dụng trên td */
+    border-collapse: separate; 
+    
+    /* Khoảng cách giữa các ô (giúp các ô bo tròn không bị dính vào nhau) */
+    border-spacing: 4px; 
+    
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(244, 114, 182, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+/* Chia đều chiều cao cho 14 hàng (1 hàng tiêu đề + 13 hàng tiết) */
+tr {
+    height: calc(100% / 14);
+}
+
+/* Tiêu đề Thứ */
+th {
+    background-color: #f472b6;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #fbcfe8;
+}
+
+th .date {
+    font-size: 10px;
+    font-weight: normal;
+    color: #ffe4e6;
+    display: block;
+}
+
+/* Cột Tiết & Cột Giờ */
+tr th:first-child, 
+td.time-col {
+    background-color: #db2777;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 11px;
+    text-align: center;
+    border: 1px solid #f472b6;
+}
+
+td {
+    border: 1px solid #fce7f3;
+    padding: 2px 4px;
+    vertical-align: middle;
+}
+
+/* Ô có môn học */
+td:not(:empty):not(.time-col) {
+    background-color: #fff1f2; /* Nền hồng sáng mịn */
+    border: 3px solid #be185d;  /* Viền hồng đậm nổi bật */
+    border-radius: 10px;        /* Bây giờ bo tròn đã hoạt động rồi! */
+    padding: 3px 6px;
+    text-align: left;
+    vertical-align: top;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(190, 24, 93, 0.2); 
+    transition: all 0.2s ease-in-out;
+}
+
+/* Thu nhỏ font chữ các thông tin để vừa vặn 1 trang */
+.subject-title {
+    font-weight: 700;
+    font-size: 11px;
+    color: #831843;
+    margin-bottom: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.subject-info {
+    font-size: 10px;
+    color: #4a5568;
+    margin-bottom: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.subject-info b {
+    color: #9d174d;
+}
+
+.subject-time {
+    font-size: 10px;
+    font-weight: 600;
+    color: #be185d;
+}

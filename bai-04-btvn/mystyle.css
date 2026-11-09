@@ -1,0 +1,31 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 80px;
+  color: red;
+  border-left: 10px solid red;
+}
+
+h2 {
+  font-size: 70px;
+  color: green;
+  border-right: 8px dashed green;
+}
+
+h3 {
+  font-size: 50px;
+  color: yellow;
+  border-top: 10px dotted yellow;
+}
+
+ol {
+  list-style-type: lower-greek;
+}
+
+ul {
+  list-style-image: url("donald.png");
+  list-style-position: inside;
+}

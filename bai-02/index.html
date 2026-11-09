@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="get" name="formRegister">
+        <table border="1" align=center width=600 cellspacing="0" cellpadding="10">
+            <caption>
+                <h3>FORM ĐĂNG KÝ THÔNG TIN SINH VIÊN</h3>
+            </caption>
+            <tr>
+                <th align="right" width="200" height="40">Họ và tên</th>
+                <td><input type="text" name="txtFullName" value="" placeholder="Họ và tên"></td>
+            </tr>
+            <tr>
+                <th align="right" height="40">Mã sinh viên</th>
+                <td><input type="number" name="numberStudentCode" placeholder="Mã sinh viên"
+                        pattern="[0-9]{2}[1-4]{1}[0-9]{4}" required></td>
+            </tr>
+            <tr>
+                <th align="right" height="40">Lớp</th>
+                <td><input type="text" name="txtClassName" placeholder="Tên lớp"></td>
+            </tr>
+            <tr>
+                <th align="right" height="40">Khoa</th>
+                <td>
+                    <select name="sltFaculty" id="">
+                        <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+                        <option value="Cơ điện">Cơ điện</option>
+                        <option value="Dầu khí và năng lượng">Dầu khí và năng lượng</option>
+                        <option value="Khoa học và Kỹ thuật Địa chất">Khoa học và Kỹ thuật Địa chất</option>
+                        <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+                        <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+                        <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+                        <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+                        <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+                        <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th align="right" height="40">Môn đã học</th>
+                <td>
+                    <select name="sltSubject" multiple size="10">
+                        <option value="Toán cao cấp" selected>Toán cao cấp</option>
+                        <option value="Đại số 1">Đại số 1</option>
+                        <option value="Cơ sở lập trình" selected>Cơ sở lập trình</option>
+                        <option value="Phát triển ứng dụng web">Phát triển ứng dụng web</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th align="right">Quê quán</th>
+                <td><input type="text" name="lstHomeTown" list="dlCities">
+                    <datalist id="dlCities">
+                        <option value="Hà Nội"></option>
+                        <option value="TP.Hồ Chí Minh"></option>
+                        <option value="Bắc Ninh"></option>
+                        <option value="Hải Phòng"></option>
+                        <option value="Hưng yên"></option>
+                        <option value="Thanh Hoá"></option>
+                        <option value="Nghệ An"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <th align="right">Số điện thoại di động</th>
+                <td><input type="tel" name="telStudentPhone" pattern="[0]{1}[1-9]{1}[0-9]{8}"></td>
+            </tr>
+            <tr>
+                <th align="right">Email</th>
+                <td><input type="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]{2,}$"></td>
+            </tr>
+            <tr>
+                <th align="right">Giới tính</th>
+                <td>
+                    <input type="radio" name="rdGender" value="Male">Nam <br>
+                    <input type="radio" name="rdGender" value="Female">Nữ <br>
+                    <input type="radio" name="rdGender" value="Gay">Đồng tính Nam <br>
+                    <input type="radio" name="rdGender" value="Lesbian">Đồng tính Nữ <br>
+                    <input type="radio" name="rdGender" value="unknown" checked>Chưa rõ <br>
+                </td>
+            </tr>
+            <tr>
+                <th align="right">Sở thích</th>
+                <td>
+                    <input type="checkbox" name="chkHobbies" value="Game">Chơi điện tử <br>
+                    <input type="checkbox" name="chkHobbies" value="Music">Nghe nhạc <br>
+                    <input type="checkbox" name="chkHobbies" value="Sport" checked>Thể thao <br>
+                    <input type="checkbox" name="chkHobbies" value="Shopping">Mua sắm <br>
+                    <input type="checkbox" name="chkHobbies" value="All" checked>Đủ thứ <br>
+                </td>
+            </tr>
+            <tr>
+                <th align="right">Ngày giờ sinh</th>
+                <td>
+                    <input type="date" name="dateDOB"><br>
+                    <input type="month" name="monthMOB"><br>
+                    <input type="week" name="weekWOB"><br>
+                    <input type="time" name="timeTOB"><br>
+                    <input type="datetime-local" name="datetimeDTOB">
+                </td>
+            </tr>
+
+            <tr>
+                <th align="right">Avatar</th>
+                <td align="left" valign="top">
+                    <input type="file" name="fileAvatar" accept="image/jpeg, image/png, image/gif">
+                    <input type="file" name="fileAvatar2" accept=".jpg, .jpeg, .png, .gif">
+                </td>
+            </tr>
+            <tr>
+                <th align="right" height="40">Địa chỉ website của Khoa</th>
+                <td><a href="https://it.humg.edu.vn/">Website Khoa CNTT</a></td>
+            </tr>
+            <tr>
+                <th align="right" height="40">Địa chỉ</th>
+                <td rowspan="2">Số nhà X, Ngách Y, Ngõ Z, Đường ABC, Tổ dân phố DEF, Phường GHI, Thành phố GHI, Việt Nam</td>
+            </tr>
+            <tr>
+                <th align="right" height="40"></th>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" bgcolor="red">
+                    <font color="yellow"><i>Ghi chú: Sinh viên kê khai thông tin thật, không được bốc phét</i></font>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Gửi 1">
+                    <button type="submit">Gửi</button>
+                    <input type="reset" value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

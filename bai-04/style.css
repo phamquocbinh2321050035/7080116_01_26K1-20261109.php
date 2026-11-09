@@ -1,0 +1,104 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  font-size: 200%; /*rem em vw px pt số*/
+  color: brown;
+  border-left: 2px solid red;
+  border-right: 4px dashed green;
+  border-top: 10px dotted yellow;
+  border-bottom: 10px double black;
+  border-radius: 50%;
+  /* solid dotted dashed double groove ridge inset outset */
+}
+
+ol {
+  list-style-type: lower-greek;
+}
+
+ul {
+  list-style-image: url("donald.png");
+  list-style-position: inside;
+}
+
+
+/*
+selector {
+thuộc tính: giá trị
+}
+*/
+/* Selector dạng element */
+/* Selector dạng id */
+
+.note {
+  font-style: italic;
+  background-color: red;
+  color: yellow;
+  text-decoration: overline;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+h1 {
+  font-style: italic;
+  background-color: blue;
+  color: yellow;
+}
+
+#para {
+  text-align: center;
+  background-color: green;
+  font-weight: 100;
+  text-decoration: line-through;
+  border: 10px dashed gray;
+}
+
+div.note {
+  font-family: wingdings;
+}
+
+a {
+  font-size: 30px;
+  text-decoration: overline;
+  color: red;
+  border-top: 10px solid cyan;
+}
+
+h2, h3, h4, h5, h6, p1 {
+  border-radius: 10px;
+  border: 5px solid red;
+  height: 50px;
+  width: 200px;
+}
+
+div a {
+  background-color: #ABCDEF;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:link {
+  color: red;
+}
+
+a:active {
+  color: brown;
+  font-weight: 900;
+}
+
+a:hover {
+  background-color: blueviolet;
+}
+
+p::first-letter {
+  font-size: 300%;
+  font-weight: 900;
+}
+
+h2::first-line {
+  text-transform: uppercase;
+}

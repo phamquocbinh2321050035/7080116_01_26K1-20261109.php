@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Máy tính mini</title>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h2>Máy tính mini</h2>
+  <form name="formMayTinh">
+    <input type="button" value="7" onclick="nhap(this.value)" />
+    <input type="button" value="8" onclick="nhap(this.value)" />
+    <input type="button" value="9" onclick="nhap(this.value)" />
+    <input type="reset" value="Reset" onclick="xoa()" />
+    <br> <br>
+    <input type="button" value="4" onclick="nhap(this.value)" />
+    <input type="button" value="5" onclick="nhap(this.value)" />
+    <input type="button" value="6" onclick="nhap(this.value)" />
+    <input type="button" value="+" onclick="nhap(this.value)" />
+    <input type="button" value="-" onclick="nhap(this.value)" />
+    <br> <br>
+    <input type="button" value="1" onclick="nhap(this.value)" />
+    <input type="button" value="2" onclick="nhap(this.value)" />
+    <input type="button" value="3" onclick="nhap(this.value)" />
+    <input type="button" value="*" onclick="nhap(this.value)" />
+    <input type="button" value="/" onclick="nhap(this.value)" />
+    <br> <br>
+    <input type="button" value="0" onclick="nhap(this.value)" />
+    <input type="button" value="." onclick="nhap(this.value)" />
+    <input type="button" value="(" onclick="nhap(this.value)" />
+    <input type="button" value=")" onclick="nhap(this.value)" />
+    <input type="button" value="=" onclick="tinh()" />
+    <br> <br>
+    Phép tính:
+    <input type="text" name="btnsTyped" readonly />
+    <br> <br>
+    Kết quả:
+    <input type="text" name="outputValue" readonly />
+  </form>
+</body>
+
+</html>
